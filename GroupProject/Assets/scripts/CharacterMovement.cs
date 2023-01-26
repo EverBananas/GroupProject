@@ -118,8 +118,8 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        // Check if we've been touched by 'enemies' 
-        if(other.tag == "Enemy")
+        // Check if we've been touched by 'enemies' and that the hero is alive 
+        if(other.tag == "Enemy" && alive)
         {
             Debug.Log("Hit", other);
             alive = false;
