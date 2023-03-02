@@ -37,10 +37,15 @@ public class Switch : MonoBehaviour
     {
         if(other.gameObject == activationObject)
         {
-            // Trigger hover movement when the correct ball is on the switch
-            other.attachedRigidbody.AddForce(Vector3.up * 6, ForceMode.Acceleration);
-            other.attachedRigidbody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionX;
-        }
+           
+                // Trigger hover movement when the correct ball is on the switch
+                other.attachedRigidbody.AddForce(Vector3.up * 6, ForceMode.Acceleration);
+                other.attachedRigidbody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionX;
+
+                other.gameObject.GetComponent<InteractionPopupTrigger>().isEnabled = false;
+                other.gameObject.GetComponent<HighLightBall>().enabled = false;
+           }
+        
     }
 
     private void OnTriggerExit(Collider other) 

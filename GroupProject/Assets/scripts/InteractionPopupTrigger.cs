@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class InteractionPopupTrigger : MonoBehaviour
 {
+    // Disabling the script doesn't stop the trigger events 
+    // https://answers.unity.com/questions/1120500/c-disabled-script-still-runs.html
+    public bool isEnabled = true;
     // Playing Animation on Trigger in Unity
     // https://www.youtube.com/watch?v=JS4k_lwmZHk
     [SerializeField]
@@ -22,7 +25,7 @@ public class InteractionPopupTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        if(other.CompareTag("Player") && GameManager.instance.playerHasObject == false)
+        if(other.CompareTag("Player") && GameManager.instance.playerHasObject == false && isEnabled)
         {
             Debug.Log("triggered");
             animationController.SetBool("PlayerInRange", true);

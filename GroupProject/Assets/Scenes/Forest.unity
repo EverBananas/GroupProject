@@ -1106,6 +1106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83171402da542074c891c4e9880ca363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isEnabled: 1
   animationController: {fileID: 1488529907}
 --- !u!135 &27691571
 SphereCollider:
@@ -61788,6 +61789,9 @@ MonoBehaviour:
   onGamePaused:
     m_PersistentCalls:
       m_Calls: []
+  onGameResume:
+    m_PersistentCalls:
+      m_Calls: []
   playerSpawnPoint: {fileID: 914315468}
   playerLives: 5
   levelTimer: 350
@@ -63578,6 +63582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83171402da542074c891c4e9880ca363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isEnabled: 1
   animationController: {fileID: 282457493}
 --- !u!135 &1705897715
 SphereCollider:
@@ -78148,6 +78153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83171402da542074c891c4e9880ca363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isEnabled: 1
   animationController: {fileID: 1456458757}
 --- !u!135 &2024001608
 SphereCollider:
@@ -82662,6 +82668,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RedBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617625238262484046, guid: eaf2eea7718040345a33882b0eae82ba,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaf2eea7718040345a33882b0eae82ba, type: 3}
