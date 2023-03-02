@@ -14,13 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene2.unity
     guid: 0c3674645072de84fbefd02b7b20c564
+  - enabled: 1
+    path: Assets/Scenes/Scene3.unity
+    guid: 0e0c5c8d835c54096b9739a61e80f105
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 593fc6f3f916f6142a3dff31928b3a1e
   - enabled: 0
     path: Assets/Scenes/Chew_MultiLevel.unity
     guid: e6dec340062479c4e94976a9363cd5e2
   - enabled: 0
     path: Assets/Scenes/chew2.unity
     guid: c7a020293896bd6428e7ccdf69dad907
-  - enabled: 1
-    path: Assets/Scenes/Forest.unity
-    guid: 593fc6f3f916f6142a3dff31928b3a1e
   m_configObjects: {}
