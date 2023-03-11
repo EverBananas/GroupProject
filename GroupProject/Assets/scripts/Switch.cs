@@ -28,10 +28,11 @@ public class Switch : MonoBehaviour
             // The activationObjects (the balls) have two colliders, we want the one that is a trigger
             if (!other.isTrigger)
             {
-                ringEffect.Play();
                 levelData.checkSwitches();
+                // Check if switch is already set as activated.
                 if (!activated)
                 {
+                    ringEffect.Play();
                     activated = true;
                     onSwitchActivated?.Invoke();
                 }
